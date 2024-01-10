@@ -1,4 +1,4 @@
-import './App.css'
+import './styles/screens.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Screen_InfoPlain from './screens/Screen_InfoPlain'

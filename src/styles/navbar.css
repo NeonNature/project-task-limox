@@ -1,0 +1,46 @@
+#navbar-container {
+  padding: 60px 60px;
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 29px;
+  font-weight: bold;
+  align-items: center;
+}
+
+#navbar-container img {
+  max-width: 150px;
+  height: auto;
+  vertical-align: -10px;
+}
+
+#navbar-links {
+  display: flex;
+}
+
+#navbar-links div {
+  margin-left: 25px;
+}
+
+#navbar-menu,
+#navbar-menu::before,
+#navbar-menu::after {
+  display: block;
+  background-color: #fff;
+  height: 4px;
+  width: 30px;
+  margin-top: 12px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#navbar-menu::before {
+  content: '';
+  margin-top: 7px;
+}
+
+#navbar-menu::after {
+  content: '';
+  margin-top: 3px;
+}

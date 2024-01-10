@@ -1,0 +1,6 @@
+.links-container {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #000;
+}

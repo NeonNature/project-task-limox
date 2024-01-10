@@ -1,0 +1,8 @@
+.screen-main-image {
+  filter: grayscale(1);
+}
+
+.screen-main-content {
+  display: flex;
+  align-self: end;
+}

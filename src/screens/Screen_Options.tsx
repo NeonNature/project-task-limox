@@ -1,5 +1,7 @@
+import ScreenContainer from '../components/ScreenContainer'
+
 function Screen_Main() {
-  return <nav>aaaa</nav>
+  return <ScreenContainer>aaaa</ScreenContainer>
 }
 
 export default Screen_Main

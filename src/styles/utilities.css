@@ -1,0 +1,5 @@
+.screen-container {
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+}
