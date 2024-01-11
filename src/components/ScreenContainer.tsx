@@ -12,13 +12,15 @@ function ScreenContainer({
   classHelper = '',
   image,
 }: ScreenContainerProps) {
-  return (
+  return image ? (
     <div
       className={`screen-container ${classHelper}`}
       style={{ backgroundImage: `url(${image})` }}
     >
       {children}
     </div>
+  ) : (
+    <div className={`screen-container ${classHelper}`}>{children}</div>
   )
 }
 

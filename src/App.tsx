@@ -17,11 +17,11 @@ function App() {
       <Navbar />
       <Screen_Main />
       <Screen_InfoPlain />
+      <Screen_InfoSlider />
       <Screen_RequestBooking />
-      <Screen_Slider />
       <Screen_RequestExclusive />
       <Screen_Links />
-      <Screen_InfoSlider />
+      <Screen_Slider />
       <Screen_Options />
       <Screen_RequestService />
       <Footer />

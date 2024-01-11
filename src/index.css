@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -9,6 +11,64 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+button {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Franklin Gothic Regular';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('Franklin Gothic Regular'),
+    url('./fonts/FranklinGothic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Franklin Gothic Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('Franklin Gothic Condensed'),
+    url('./fonts/FRANKGO.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Franklin Gothic Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('Franklin Gothic Condensed'),
+    url('./fonts/Franklin Gothic Condensed.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Franklin Gothic ITALIC';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('Franklin Gothic ITALIC'),
+    url('./fonts/FranklinGothicITALIC.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Franklin Gothic ITALIC';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('Franklin Gothic ITALIC'),
+    url('./fonts/fgwo____.woff') format('woff');
+}
+
 body {
   margin: 0;
+  font-family: 'Franklin Gothic Condensed';
+  letter-spacing: 1.2px;
 }

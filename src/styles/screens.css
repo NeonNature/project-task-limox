@@ -2,7 +2,255 @@
   filter: grayscale(1);
 }
 
-.screen-main-content {
+#screen-main-content {
   display: flex;
   align-self: end;
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+  flex-direction: column;
+  width: 100%;
+}
+
+#screen-main-title {
+  font-weight: normal;
+  font-size: 70px;
+  letter-spacing: 1.2px;
+}
+
+#screen-main-interact {
+  flex-direction: row;
+  display: flex;
+  align-items: start;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+#screen-main-interact > div:not(:last-child) {
+  flex: 30%;
+}
+
+#screen-main-interact > div:last-child {
+  flex: 10%;
+}
+
+#screen-main-interact .MuiInputBase-root {
+  min-height: 60px;
+}
+
+.screen-service-image {
+  filter: grayscale(1);
+  background-image: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url(../assets/image-006.png);
+}
+
+#screen-service-content {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-self: end;
+}
+
+#screen-service-title {
+  font-size: 50px;
+  filter: drop-shadow(1px 1px 1px grey);
+  color: #000;
+}
+
+#screen-service-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  color: #000;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+
+.screen-booking-image {
+  filter: grayscale(1);
+}
+
+#screen-booking-content {
+  display: flex;
+  align-self: center;
+  text-align: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+#screen-booking-content button {
+  margin: 0 auto;
+}
+
+#screen-booking-title {
+  font-size: 70px;
+  font-weight: bold;
+  color: #fff;
+}
+
+#screen-exclusive-content,
+#screen-service-content {
+  display: flex;
+  align-self: end;
+  font-weight: 700;
+  color: #fff;
+  flex-direction: column;
+}
+
+#screen-exclusive-content {
+  font-size: 60px;
+}
+
+#screen-service-content {
+  font-size: 50px;
+}
+
+.screen-links-image {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url(../assets/image-003.png);
+}
+
+.screen-links-image > div {
+  width: 100%;
+  padding-block: 100px;
+}
+
+.screen-main-button {
+  cursor: pointer;
+  padding: 5px 25px;
+  background-color: #fff;
+  min-height: 60px;
+  display: block;
+}
+
+.screen-main-button img {
+  max-width: 75px;
+}
+
+.screen-info-slider {
+  background-color: #b3b3b3;
+}
+
+#screen-bg-container {
+  min-height: 100vh;
+  position: relative;
+}
+
+.screen-bg-content {
+  font-size: 60px;
+  z-index: 5;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: #fff;
+  line-height: 1;
+}
+
+.screen-options-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.screen-options-container > div > div:nth-child(1) {
+  font-size: 60px;
+}
+
+.screen-options-container > div > div:nth-child(2) {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  color: #000;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+
+.screen-options-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.screen-options-logo img {
+  width: auto;
+  max-height: 100px;
+  filter: grayscale(1);
+}
+
+.screen-options-logo > div {
+  cursor: pointer;
+  padding-inline: 30px;
+  border-left: 1px solid #ccc;
+}
+
+.screen-options-logo > div:hover img {
+  filter: none;
+}
+
+#logo-vw {
+  vertical-align: -5px;
+}
+
+@media screen and (max-width: 480px) {
+  #screen-main-interact {
+    flex-direction: column;
+  }
+
+  #screen-service-content {
+    font-size: 36px;
+  }
+
+  .screen-options-container > div > div:nth-child(2),
+  #screen-service-subtitle {
+    font-size: 20px;
+  }
+
+  .screen-options-logo {
+    flex-direction: column;
+  }
+
+  .screen-options-logo > div {
+    border-left: 0;
+    padding-block: 25px;
+  }
+
+  .screen-options-logo > div:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .screen-options-container > div > div:nth-child(1),
+  .screen-bg-content,
+  #screen-booking-title,
+  #screen-exclusive-content,
+  #screen-service-title,
+  #screen-main-content,
+  #screen-main-title {
+    font-size: 30px;
+  }
+
+  .screen-info-slider.screen-container {
+    padding: 25px 0;
+  }
+
+  #screen-bg-container {
+    min-height: initial;
+  }
+
+  #screen-main-interact > div,
+  .screen-main-button {
+    flex: 100% !important;
+    width: 100%;
+  }
+
+  .card-slider .button-container > div:first-child {
+    padding: 18px;
+  }
 }
